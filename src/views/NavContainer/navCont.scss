@@ -1,0 +1,48 @@
+$center-item: auto auto;
+
+.nav-container{
+  height: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .logo {
+    background: rgb(25, 51, 103);
+  }
+
+  .auth-area{
+    background-color: rgb(25, 51, 103);
+    color: white;
+    display: grid;
+    justify-content: left;
+    grid-template-columns: auto auto;
+    grid-column-gap: 0.8rem;
+    font-family: 'Dokdo', cursive;
+    font-size: 24px;
+
+    div {
+      padding: 0 0.4rem;
+      white-space: nowrap;
+    }
+
+    div:hover {
+      color: white;
+      transform: scale(1.1);
+      transition: all 0.4s;
+    }
+    div:active {
+      color: #D3D0CF;
+    }
+
+    .login {
+      margin: $center-item;
+      cursor: pointer;
+      transform: scale(1);
+    }
+
+    .sign-up {
+      margin: $center-item;
+      cursor: pointer;
+    }
+  }
+
+}

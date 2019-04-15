@@ -1,0 +1,129 @@
+.modal-content {
+  padding: 2em 1em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+  .header {
+    display: grid;
+    grid-template-rows: 1fr 0.8fr;
+    font-size: 32px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+
+
+    .title {
+      font-weight: 700;
+    }
+    .sub-title {
+      font-size: 15px;
+      font-weight: 700;
+      white-space: nowrap;
+      color: rgba(0,0,0,.3);
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .social-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.5em;
+    grid-column-gap: 1em;
+    margin-top: 1em;
+
+    .social {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 22px;
+      color: white;
+      font-weight: 700;
+      font-family: 'Dokdo', cursive;
+      justify-content: center;
+      transform: scale(1);
+
+      @media (max-width: 415px) {
+        grid-template-columns: 1fr;
+
+        span {
+          display: none;
+          color: rgba(0,0,0,.3);
+
+        }
+      }
+      &.social:hover {
+        transform: scale(1.1);
+        transition: all 0.4s;
+      }
+
+      &.social:active {
+        color: rgba(0,0,0,.3);
+      }
+
+      i {
+        font-size: 22px;
+        color: white;
+        margin: auto auto;
+      }
+
+      &.facebook {
+        background-color: rgb(60,90,153);
+      }
+
+      &.google {
+        background: #af2722;
+      }
+
+      &.twitter {
+        background: #2589d0;
+      }
+    }
+
+  }
+  .alt-registration{
+    margin-top: 1em;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-row-gap: 0.5em;
+
+    .registration-title {
+      font-weight: 700;
+      color: rgba(0,0,0,.3);
+      letter-spacing: 0.5px;
+    }
+    .form-container {
+      form {
+        display: grid;
+        grid-row-gap: 0.5em;
+        input {
+          height: 2.6em;
+          border-radius: 3px;
+          border: 1px solid #cccccc;
+          padding: 0.2em 0.4em;
+        }
+
+          .sign-up-button {
+            cursor: pointer;
+            background-color: blue;
+            height: 1.6em;
+            color: white;
+            margin-top: 1em;
+            font-family: 'Dokdo', cursive;
+            font-size: 26px;
+            border-radius: 5px;
+            transform: scale(1);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+          }
+          .sign-up-button:hover{
+            transform: scale(1.05);
+            transition: all 0.4s;
+          }
+          .sign-up-button:active{
+            color: rgba(0,0,0,.3);
+            outline: none;
+          }
+      }
+    }
+  }
+}
